@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('blog', 'Blog@index');
+
+Route::get('artigo/{url}', 'Blog@artigo');
